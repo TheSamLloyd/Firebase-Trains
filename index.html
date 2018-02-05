@@ -2,39 +2,62 @@
 <html lang="en-us">
 	<head>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div class="jumbotron">
-			HEADER
+			<div class="container">
+				<h2>WELCOME 2 THA STATION</h2>
+				<h4>WE GOT LOTSA TRAINS</h4>
+			</div>
 		</div>
 		<div class="container">
-			<div>
-				TRAINS
-				<table>
+			<div class="row">
+				<h4>Currently running trains:</h4>
+			</div>
+			<div class="row">
+				<table class="table table-striped">
 					<thead>
 						<tr>
 							<th>Train Name</th>
 							<th>Destination</th>
 							<th>Frequency</th>
 							<th>Next Departure Time</th>
+							<th>Until Next Departure</th>
 						</tr>
 					</thead>
 					<tbody id="trains-list">
 					</tbody>
 				</table>
 			</div>
-			<div>
-				ADD A TRAIN
+			<div class="row">
+				<h4> Add a train:</h4>
+			</div>
+			<div class="row">
 				<form>
-					Train Name:
-					<input type="text" id="train-name"><br>
-					Destination:
-					<input type="text" id="train-destination"><br>
-					First Departure Time:
-					<input type="text" id="train-first-time"><br>
-					Frequency:
-					<input type="text" id="train-frequency"><br>
-					<button id="submit">Submit</button>
+					<div class="form-row">
+						<div class="col">
+							<label for="train-name">Train Name:</label>
+							<input type="text" id="train-name" class="form-control">
+						</div>
+						<div class="col">
+							<label for="train-destination">Destination:</label>
+							<input type="text" id="train-destination" class="form-control">
+						</div>
+						<div class="col">
+							<label for="train-first-time">First Departure Time:</label>
+							<input type="text" id="train-first-time" class="form-control">
+						</div>
+						<div class="col">
+							<label for="frequency">Frequency:</label>
+							<input type="text" id="train-frequency" class="form-control">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col">
+							<button id="submit" class="btn btn-primary mt-2">Submit</button>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -42,6 +65,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  		<script src="moment.min.js"></script>
   		<script src="script.js"></script>
 	</body>
 </html>
