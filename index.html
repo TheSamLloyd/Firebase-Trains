@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="jumbotron">
+			HEADER
+		</div>
+		<div class="container">
+			<div>
+				TRAINS
+				<table>
+					<thead>
+						<tr>
+							<th>Train Name</th>
+							<th>Destination</th>
+							<th>Frequency</th>
+							<th>Next Departure Time</th>
+						</tr>
+					</thead>
+					<tbody id="trains-list">
+					</tbody>
+				</table>
+			</div>
+			<div>
+				ADD A TRAIN
+				<form>
+					Train Name:
+					<input type="text" id="train-name"><br>
+					Destination:
+					<input type="text" id="train-destination"><br>
+					First Departure Time:
+					<input type="text" id="train-first-time"><br>
+					Frequency:
+					<input type="text" id="train-frequency"><br>
+					<button id="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+		<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  		<script src="script.js"></script>
+	</body>
+</html>
